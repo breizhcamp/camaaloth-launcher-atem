@@ -12,6 +12,9 @@ import { AtemService } from './services/atem.service'
 @Module({
   imports: [ EventEmitterModule.forRoot() ],
   controllers: [ FileController, StateController ],
-  providers: [ FileService, ExecService, TalkService, StateService, WSGateway, AtemService ],
+  providers: [
+    FileService, ExecService, TalkService, StateService, WSGateway,
+    AtemService
+  ],
 })
 export class AppModule {}
